@@ -25,7 +25,8 @@ cv.destroyWindow('Miyuki') #or cv.destroyAllWindows()
 #matplotlib makes use of RGB mode, but opencv utilizes BGR mode!
 img = cv.cvtColor(img, cv.COLOR_BGR2RGB) #color mode change
 plt.imshow(img, cmap = 'Accent', interpolation = 'bicubic')
-plt.xticks([]), plt.yticks([])  # to hide tick values on X and Y axis
+plt.xticks([])  # hide tick values on X axis
+plt.yticks([])  # hide tick values on Y axis
 plt.show()
 
 
